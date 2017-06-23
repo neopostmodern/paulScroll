@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <title>PaulScrolling Demo</title>
+  <meta charset="UTF-8" />
+  <style>
+  html, body {
+    padding: 0;
+    margin: 0;
+  }
+  body, h1 {
+    font-family: "Arial", sans-serif;
+    font-weight: 600;
+    color: white;
+  }
+  h1 {
+    margin: 0;
+    font-size: 5rem;
+  }
+  section {
+    min-height: 101vh;
+    padding: 3rem;
+    box-sizing: border-box;
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    		  crossorigin="anonymous"></script>
+  <!-- <script src="/jquery-ui.min.js"></script> -->
+</head>
+<body>
+  <section class="center" style="background-color: gray;">
+    <h1>paulScrolling.js</h1>
+  </section>
+  <section style="background-color: navy;">
+    <h1>I can haz big page with long text?</h1>
+    <div style="width: 30em; font-size: 130%; margin-left: 5em; margin-bottom: 10em;">
+      <p>Try-hard assumenda freegan, vice typewriter food truck qui  man bun prism trust fund.  Cred esse  occaecat, deep v shabby chic nostrud vice reprehenderit  dolor  cornhole.  Meh organic migas small batch nesciunt, four loko plaid semiotics la croix craft beer.  Vape mlkshk chartreuse duis  tofu.  Nulla  cred street art chia waistcoat.  Chia eu  magna thundercats, chillwave green juice eiusmod austin af keytar.  Knausgaard disrupt nihil, narwhal whatever tilde pariatur squid bicycle rights sunt franzen pour-over.</p>
+      <p>Food truck snackwave poke, activated charcoal vaporware offal blog forage enim.  Non  gastropub ex ut ad af, bespoke tacos woke 3 wolf moon meditation direct trade  pickled.  Brooklyn duis  distillery banjo, blog sed offal.  Nesciunt roof party neutra kogi nostrud.  VHS poke tumeric id  anim.  Selvage next level heirloom, godard roof party esse  irony.  Id  hot chicken kickstarter, iceland waistcoat in  duis.</p>
+      <p>Kogi 8-bit four loko, aliquip prism shabby chic jean shorts cred affogato echo park nulla  tote bag.  Meggings fap cardigan normcore, yr sint  venmo tattooed.  Bitters twee bespoke, deserunt  semiotics taxidermy ugh austin.  Godard next level blue bottle hoodie, distillery organic man braid whatever ut wayfarers assumenda magna plaid aute  sriracha.  Bitters et aesthetic la croix velit.  Fashion axe microdosing church-key pitchfork quis, yr lumbersexual banjo man bun venmo.  Deep v enamel pin accusamus, squid id  narwhal vegan church-key stumptown af truffaut.</p>
+      <p>Godard sapiente commodo messenger bag ennui, tumblr gluten-free adipisicing twee blue bottle schlitz.  +1 tumblr letterpress, retro voluptate  mixtape consectetur biodiesel vero man braid ramps swag master cleanse deep v.  Sed consequat kitsch, cornhole placeat unicorn ut farm-to-table disrupt helvetica knausgaard deserunt  microdosing brooklyn.  Air plant lo-fi chartreuse ullamco kinfolk pickled, meh voluptate  iPhone blue bottle.  Man bun aliquip tattooed dolore distillery.  Truffaut fanny pack blue bottle tilde nulla, coloring book farm-to-table tacos trust fund cray edison bulb live-edge eiusmod fugiat  kale chips.  Ex four dollar toast raclette duis.</p>
+    </div>
+  </section>
+  <section style="background-color: black;">
+    <h1>I can haz cat pictures in my demo?</h1>
+    <div style="margin: 3em 5em;">
+      <img src="//placekitten.com/g/1000/500" style="width: 100%;" />
+    </div>
+  </section>
+  <section style="background-color: purple;">
+    <h1>And another <i>supersized</i> text...</h1>
+    <div style="width: 30em; font-size: 130%; margin-left: 5em;">
+      <p>Try-hard assumenda freegan, vice typewriter food truck qui  man bun prism trust fund.  Cred esse  occaecat, deep v shabby chic nostrud vice reprehenderit  dolor  cornhole.  Meh organic migas small batch nesciunt, four loko plaid semiotics la croix craft beer.  Vape mlkshk chartreuse duis  tofu.  Nulla  cred street art chia waistcoat.  Chia eu  magna thundercats, chillwave green juice eiusmod austin af keytar.  Knausgaard disrupt nihil, narwhal whatever tilde pariatur squid bicycle rights sunt franzen pour-over.</p>
+      <p>Food truck snackwave poke, activated charcoal vaporware offal blog forage enim.  Non  gastropub ex ut ad af, bespoke tacos woke 3 wolf moon meditation direct trade  pickled.  Brooklyn duis  distillery banjo, blog sed offal.  Nesciunt roof party neutra kogi nostrud.  VHS poke tumeric id  anim.  Selvage next level heirloom, godard roof party esse  irony.  Id  hot chicken kickstarter, iceland waistcoat in  duis.</p>
+      <p>Kogi 8-bit four loko, aliquip prism shabby chic jean shorts cred affogato echo park nulla  tote bag.  Meggings fap cardigan normcore, yr sint  venmo tattooed.  Bitters twee bespoke, deserunt  semiotics taxidermy ugh austin.  Godard next level blue bottle hoodie, distillery organic man braid whatever ut wayfarers assumenda magna plaid aute  sriracha.  Bitters et aesthetic la croix velit.  Fashion axe microdosing church-key pitchfork quis, yr lumbersexual banjo man bun venmo.  Deep v enamel pin accusamus, squid id  narwhal vegan church-key stumptown af truffaut.</p>
+      <p>Godard sapiente commodo messenger bag ennui, tumblr gluten-free adipisicing twee blue bottle schlitz.  +1 tumblr letterpress, retro voluptate  mixtape consectetur biodiesel vero man braid ramps swag master cleanse deep v.  Sed consequat kitsch, cornhole placeat unicorn ut farm-to-table disrupt helvetica knausgaard deserunt  microdosing brooklyn.  Air plant lo-fi chartreuse ullamco kinfolk pickled, meh voluptate  iPhone blue bottle.  Man bun aliquip tattooed dolore distillery.  Truffaut fanny pack blue bottle tilde nulla, coloring book farm-to-table tacos trust fund cray edison bulb live-edge eiusmod fugiat  kale chips.  Ex four dollar toast raclette duis.</p>
+    </div>
+    <h1>... it's ridiculous but it's true.</h1>
+    <div style="width: 30em; font-size: 130%; margin-left: 5em; margin-bottom: 10em;">
+      <p>Try-hard assumenda freegan, vice typewriter food truck qui  man bun prism trust fund.  Cred esse  occaecat, deep v shabby chic nostrud vice reprehenderit  dolor  cornhole.  Meh organic migas small batch nesciunt, four loko plaid semiotics la croix craft beer.  Vape mlkshk chartreuse duis  tofu.  Nulla  cred street art chia waistcoat.  Chia eu  magna thundercats, chillwave green juice eiusmod austin af keytar.  Knausgaard disrupt nihil, narwhal whatever tilde pariatur squid bicycle rights sunt franzen pour-over.</p>
+      <p>Food truck snackwave poke, activated charcoal vaporware offal blog forage enim.  Non  gastropub ex ut ad af, bespoke tacos woke 3 wolf moon meditation direct trade  pickled.  Brooklyn duis  distillery banjo, blog sed offal.  Nesciunt roof party neutra kogi nostrud.  VHS poke tumeric id  anim.  Selvage next level heirloom, godard roof party esse  irony.  Id  hot chicken kickstarter, iceland waistcoat in  duis.</p>
+      <p>Kogi 8-bit four loko, aliquip prism shabby chic jean shorts cred affogato echo park nulla  tote bag.  Meggings fap cardigan normcore, yr sint  venmo tattooed.  Bitters twee bespoke, deserunt  semiotics taxidermy ugh austin.  Godard next level blue bottle hoodie, distillery organic man braid whatever ut wayfarers assumenda magna plaid aute  sriracha.  Bitters et aesthetic la croix velit.  Fashion axe microdosing church-key pitchfork quis, yr lumbersexual banjo man bun venmo.  Deep v enamel pin accusamus, squid id  narwhal vegan church-key stumptown af truffaut.</p>
+      <p>Godard sapiente commodo messenger bag ennui, tumblr gluten-free adipisicing twee blue bottle schlitz.  +1 tumblr letterpress, retro voluptate  mixtape consectetur biodiesel vero man braid ramps swag master cleanse deep v.  Sed consequat kitsch, cornhole placeat unicorn ut farm-to-table disrupt helvetica knausgaard deserunt  microdosing brooklyn.  Air plant lo-fi chartreuse ullamco kinfolk pickled, meh voluptate  iPhone blue bottle.  Man bun aliquip tattooed dolore distillery.  Truffaut fanny pack blue bottle tilde nulla, coloring book farm-to-table tacos trust fund cray edison bulb live-edge eiusmod fugiat  kale chips.  Ex four dollar toast raclette duis.</p>
+    </div>
+  </section>
+  <section class="center" style="background-color: darkgreen;">
+    <h1>The end.</h1>
+  </section>
+
+  <script src="paulScroll.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      console.log('Get ready for some Paul!');
+      PaulScroll('section');
+    });
+  </script>
+</body>
+</html>
