@@ -9,17 +9,22 @@ function PaulScroll(selector, animationDuration = 500) {
     window['s' + sectionIndex] = sections[sectionIndex];
   }
 
-  let jumpRateLimiter = null;
+  let jumpSemaphore = false;
   function jumpTo(sectionIndex, reverse) {
-    let section = $(sections[sectionIndex]);
-    let scrollTop = section.offset().top;
-    if (reverse) {
-      console.log(scrollTop, section.height(), $(window).height());
-      scrollTop += section.innerHeight() - $(window).height() - 1;
+    if (jumpSemaphore) {
+      return;
     }
+
+    let section = $(sections[sectionIndex]);
+    let scrollTop = section.offset().top + 1;
+    if (reverse) {
+      scrollTop += section.innerHeight() - $(window).height() - 2;
+    }
+    jumpSemaphore = true;
     $("html, body").animate(
       { scrollTop },
       {
+        done: () => { jumpSemaphore = false; },
         duration: animationDuration,
         easing: 'swing'
       }
@@ -53,9 +58,9 @@ function PaulScroll(selector, animationDuration = 500) {
       }
     }
 
-    if (oldScrollPositionY <= window.scrollY) {
+    if (oldScrollPositionY < window.scrollY - 5) {
       requestJumpTo(peaking);
-    } else {
+    } else if (oldScrollPositionY > window.scrollY + 5) {
       requestJumpTo(tailing, true)
     }
 
